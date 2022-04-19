@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+.header{
+    padding: 60px;
+    font-family:'Prompt',sans-serif;
+    text-align: left;
+    size: 80%;
+    background: linear-gradient(90deg,#B0F4E6,#67EACA,#12D3CF);
+    color: #125B50;
+}
+
+
+/* Typewriter animation for the "Hello text" */
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    
+    /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* Typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+
+
+/* Navigation Bar */
+.navbar a{
+    color: rgb(201, 242, 225);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* ------Body collumns-------- */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Left */
+.side{
+    flex: 30%;
+    background-color: #EDE6DB;
+    padding: 20px;
+}
+
+/* Center */
+.main{
+    flex: 70%;
+    background-color: #FAF5E4;
+    padding: 20px;
+}
+
+
+/* Social Media Icons */
+.icon{
+    background-color: transparent;
+    width: 4.5%;
+    height: 4.5%;
+    padding: 5px;
+    float: right;
+}
+
+
+/* Footer */
+.footer{
+    padding: 20px;
+    text-align: center;
+    background: #67EACA;
+}
+
+/* Adaptive Layout */
+@media (max-width: 700px){
+    .row, .navbar {
+        flex-direction: column;
+    }
+}
